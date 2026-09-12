@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faroltech - Polimento de Faróis | Seu Farol Como Novo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a1a1a',
+                        secondary: '#ffcc00',
+                        dark: '#0f0f0f',
+                    },
+                    fontFamily: {
+                        sans: ['Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .text-shadow { text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .card-shadow { box-shadow: 0 10px 25px -5px rgba(255,204,0,0.2); }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- SEU NÚMERO JÁ CONFIGURADO -->
+    <script>const WHATSAPP_NUMERO = "5512988094976";</script>
+
+    <!-- Cabeçalho -->
+    <header class="bg-dark py-4 px-6 sticky top-0 z-50 border-b border-secondary/30">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-secondary text-3xl font-black tracking-tighter">FAROL<span class="text-white">TECH</span></div>
+            <nav class="hidden md:flex gap-8">
+                <a href="#inicio" class="hover:text-secondary">Início</a>
+                <a href="#servicos" class="hover:text-secondary">Serviços</a>
+                <a href="#resultados" class="hover:text-secondary">Resultados</a>
+                <a href="#agendamento" class="hover:text-secondary">Agendar</a>
+                <a href="#contato" class="hover:text-secondary">Contato</a>
+            </nav>
+            <button class="md:hidden text-2xl" id="menuBtn"><i class="fa fa-bars"></i></button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 flex flex-col gap-3 px-6">
+            <a href="#inicio" class="hover:text-secondary">Início</a>
+            <a href="#servicos" class="hover:text-secondary">Serviços</a>
+            <a href="#resultados" class="hover:text-secondary">Resultados</a>
+            <a href="#agendamento" class="hover:text-secondary">Agendar</a>
+            <a href="#contato" class="hover:text-secondary">Contato</a>
+        </div>
+    </header>
+
+    <!-- Início -->
+    <section id="inicio" class="py-20 px-6 bg-gradient-to-b from-dark to-gray-900">
+        <div class="container mx-auto text-center">
+            <h1 class="text-[clamp(2.5rem,6vw,4rem)] font-black mb-6 text-shadow">
+                <span class="text-secondary">POLIMENTO DE FARÓIS</span><br>MAIS VISIBILIDADE E SEGURANÇA
+            </h1>
+            <p class="text-xl mb-10 max-w-3xl mx-auto">Faróis amarelados reduzem até 50% da luz. A <strong>Faroltech</strong> devolve transparência, segurança e valor ao seu veículo!</p>
+            <a href="#agendamento" class="bg-secondary text-black font-bold py-4 px-10 rounded-lg text-lg hover:bg-yellow-400 transition-all inline-block">AGENDE AGORA <i class="fa fa-arrow-right ml-2"></i></a>
+            <div class="mt-16 flex flex-col md:flex-row gap-8 justify-center">
+                <div class="bg-gray-800/50 p-6 rounded-xl flex items-center gap-4"><i class="fa fa-eye text-secondary text-3xl"></i><span>Melhor Visibilidade</span></div>
+                <div class="bg-gray-800/50 p-6 rounded-xl flex items-center gap-4"><i class="fa fa-shield text-secondary text-3xl"></i><span>Mais Segurança</span></div>
+                <div class="bg-gray-800/50 p-6 rounded-xl flex items-center gap-4"><i class="fa fa-car text-secondary text-3xl"></i><span>Valoriza Seu Veículo</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-20 px-6 bg-gray-900">
+        <div class="container m
