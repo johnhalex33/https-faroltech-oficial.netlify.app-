@@ -1,0 +1,34 @@
+FAROLTECH — SISTEMA DE AGENDAMENTO CLIENTE + ADMIN
+
+O pacote agora possui duas telas conectadas ao backend:
+
+1) cliente/agendamento.html
+- Cliente escolhe serviço, data e horário.
+- Envia nome, WhatsApp, veículo e observações.
+- O agendamento é salvo no servidor.
+- Horário ocupado fica indisponível.
+
+2) admin/admin.html
+- Login administrativo.
+- Lista os agendamentos do dia.
+- Atualiza automaticamente a cada 20 segundos.
+- Destaca novos agendamentos.
+- Pode abrir o WhatsApp do cliente.
+- Pode cancelar agendamento.
+- Pode usar notificação do navegador quando permitido.
+
+IMPORTANTE:
+Este pacote ainda precisa de um backend hospedado na internet para funcionar entre celulares diferentes.
+A URL do backend fica em config.js.
+
+Teste local:
+- No computador, rode o backend FarolTech na porta 3000.
+- Abra as páginas por um servidor local (não pelo file:// se o navegador bloquear requisições).
+
+Produção:
+- Hospede faroltech_backend_online_v2.zip em um servidor com HTTPS.
+- Troque em config.js:
+  window.FAROLTECH_API_BASE = 'https://SEU-DOMINIO-DO-BACKEND';
+- Troque a senha padrão do administrador (1234) no servidor usando ADMIN_PASSWORD.
+
+Atenção: o código não contém hospedagem nem domínio. Depois de hospedar, qualquer celular poderá usar o link do cliente e você poderá abrir o painel administrativo pelo celular.
